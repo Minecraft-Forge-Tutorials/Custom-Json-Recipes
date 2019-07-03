@@ -37,9 +37,9 @@ public class CustomRecipesMod {
     
     private void registerRecipeSerializers (Register<IRecipeSerializer<?>> event) {
         
-        // Recipe types have to be registered, but Forge doesn't currently wrap the IRecipeType
-        // registry.
-        // Registering it before you register the serializer should be fine in the short term.
+        // Vanilla has a registry for recipe types, but it does not actively use this registry.
+        // While this makes registering your recipe type an optional step, I recommend
+        // registering it anyway to allow other mods to discover your custom recipe types.
         Registry.register(Registry.RECIPE_TYPE, new ResourceLocation(CLICK_BLOCK_RECIPE.toString()), CLICK_BLOCK_RECIPE);
         
         // Register the recipe serializer. This handles from json, from packet, and to packet.
