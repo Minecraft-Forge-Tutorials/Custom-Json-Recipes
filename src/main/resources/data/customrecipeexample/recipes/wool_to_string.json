@@ -1,0 +1,11 @@
+{
+  "type": "customrecipeexample:click_block_recipe",
+  "blockId": "minecraft:stonecutter",
+  "input": {
+    "tag": "minecraft:wool"
+  },
+  "output": {
+    "item": "minecraft:string",
+	"count": 4
+  }
+}

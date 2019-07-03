@@ -1,0 +1,10 @@
+{
+  "type": "customrecipeexample:click_block_recipe",
+  "blockId": "minecraft:beacon",
+  "input": {
+    "item": "minecraft:dirt"
+  },
+  "output": {
+    "item": "minecraft:diamond"
+  }
+}
